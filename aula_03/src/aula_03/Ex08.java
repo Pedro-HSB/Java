@@ -29,7 +29,7 @@ public class Ex08 {
 				System.out.print("novo Saldo da conta e "+ (saldo-valor));
 			}
 			else {
-				System.out.print("Saldo insuficiente");
+				System.out.print("Saldo Insuficiente!");
 			}
 			break;
 			
