@@ -8,13 +8,15 @@ public class Ex05 {
 
 	public static void main(String[] args) {
 
-		int numero=0,limit=1;
+		int numero=0,limit=1,total=0;
 		
 		do {
 			System.out.println("Digite um número: ");
-			numero+=leia.nextInt();
+			numero=leia.nextInt();
+			if(numero>0)
+				total+=numero;
 				
 		}while(limit>0);
-		System.out.println("A soma dos números positivos é: "+numero);
+		System.out.println("A soma dos números positivos é: "+total);
 	}
 }
