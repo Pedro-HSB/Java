@@ -1,6 +1,6 @@
 package games;
 
-public class Produto {
+public abstract class Produto {
 	
 	private String nome;
 	private float preco;
@@ -46,15 +46,5 @@ public class Produto {
 		this.quantidade = quantidade;
 		this.descricao = descricao;
 		this.estado = estado;
-	}
-	
-	public void visualizar() {
-		System.out.println("o nome dop jogo e: "+ getNome());
-		System.out.println("o preco do jogo e: "+getPreco());
-		System.out.println("qual quantidade deseja levar: "+getQuantidade());
-		System.out.println("descricao sobre o jogo: "+getDescricao());
-		System.out.println("o estado de conservacao e: "+getEstado());
-		System.out.println("o preco final ficou: "+(getPreco()*getQuantidade())+"\n");
-	}
-	
+	}	
 }

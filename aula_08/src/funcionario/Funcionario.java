@@ -1,6 +1,6 @@
 package funcionario;
 
-public class Funcionario {
+public abstract class Funcionario {
 
 	private boolean carteiraTrabalho;
 	private String nome;
@@ -47,16 +47,5 @@ public class Funcionario {
 		this.setor = setor;
 		this.salario = salario;
 		this.etnia = etnia;
-	}
-	public void visualisa() {
-		System.out.println("seu nome e: " + this.nome);
-		if (this.getCarteiraTrabalho()==true) 
-			System.out.println("possui carteira de trabalho : Sim");
-		
-		else
-			System.out.println("possui carteira de trabalho : Nao");
-		System.out.println("sua etnia e: " + this.getEtnia());
-		System.out.println("seu salario e: "+this.getSalario());
-		System.out.println("seu setor e: "+this.getSetor()+"\n");
 	}
 }
